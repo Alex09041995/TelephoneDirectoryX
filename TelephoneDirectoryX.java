@@ -91,8 +91,8 @@ public class TelephoneDirectoryX {
                 String lastName = parts[1];
                 TelephoneDirectoryX.remove(lastName);
                 System.out.println("Контакт удален из телефонного справочника");
-                } else if (command.equals("LIST")) {
-                    (TelephoneDirectoryX).list();
+                } else if (startsWith("LIST")) {
+                    System.out.println(contactList);
                 } else {
                 System.out.println("EXIT!");
                 continue;
